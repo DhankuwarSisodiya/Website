@@ -1,9 +1,16 @@
 const html = document.documentElement;
+$(document).ready(function () {
+    var $horizontal = $('#horizontal');
+    
+    $(window).scroll(function () {
+        var s = $(this).scrollTop(),
+            d = $(document).height(),
+            c = $(this).height();
 
-window.addEventListener('scroll', () => {
-    
-    const scrollTop = html.scrollTop;
-    const maxScroll = html.scrollHeight - window.innerHeight;
-    const scrollFraction = scrollTop / maxScroll;
-    
-})
+        scrollPercent = (s / (d - c));
+        var position = (scrollPercent * ($(document).width()));
+        $horizontal.css({
+            'right': position
+        });
+    });
+});
