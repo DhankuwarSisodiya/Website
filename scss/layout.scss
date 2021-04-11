@@ -169,15 +169,26 @@ $scrollBarHeight: 1px;
 }
 
 .projects{
-    height: 100vh;
-    border:1px solid red;
+    padding: 175px 75px;
+    height: 400vh;
+    // border:1px solid red;
     background: #000000;
     position: absolute;
     top: 192.8vh;
-    width: 100%  
-}
-.project-image{
-    width: 500px;
-    height: 314px;
-    background-size: cover;
+    width: 100vw; 
+    .project-wrapper {
+        padding: 150px 0;
+        .project-content {
+            padding: 45px;
+            width: 600px;
+        }
+        .project-image{
+            width: 500px;
+            height: 314px;
+            background-size: cover;
+            border-radius: 25px;
+            border: 1px solid #212121;
+        }
+    }
+    
 }
