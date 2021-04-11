@@ -8,9 +8,12 @@ $(document).ready(function () {
             c = $(this).height();
 
         scrollPercent = (s / (d - c));
-        var position = (scrollPercent * ($(document).width()));
-        $horizontal.css({
-            'right': position
-        });
+        if(s >= c){
+            var position = (scrollPercent * ($(document).width()));
+            $horizontal.css({
+                'right': position
+            });
+            console.log(s,d,c,position)
+        }
     });
 });
