@@ -192,3 +192,50 @@ $scrollBarHeight: 1px;
     }
     
 }
+
+.sub-heading{
+    position: relative;
+    z-index: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #fff;
+    font-size: .75rem;
+    line-height: 1;
+    font-weight: 500;
+    .title{
+        align-items: center;
+    font-size: 1rem;
+    text-transform: capitalize;
+    }
+}
+.m-dash{
+    width: 2.5rem;
+    height: 1px;
+    margin-right: .5rem;
+    margin-left: .5rem;
+    background-color: #fff;
+}
+
+.publications{
+    margin-left: 230px;
+    .publications-heading{
+        width: 80%;
+        h2{
+            font-size: 32px;
+            margin: 2px 0 5px 0;
+            border-bottom: 1px solid white;
+        }
+    }
+}
