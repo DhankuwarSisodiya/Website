@@ -170,7 +170,7 @@ $scrollBarHeight: 1px;
 
 .projects{
     padding: 175px 75px;
-    height: 400vh;
+    height: 600vh;
     // border:1px solid red;
     background: #000000;
     position: absolute;
@@ -181,13 +181,15 @@ $scrollBarHeight: 1px;
         .project-content {
             padding: 45px;
             width: 600px;
+            transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+            transform-style: preserve-3d;
         }
         .project-image{
-            width: 500px;
-            height: 314px;
+            width: 505px;
+            height: 335px;
             background-size: cover;
             border-radius: 25px;
-            border: 1px solid #212121;
+            //border: 1px solid #212121;
         }
     }
     
@@ -229,13 +231,222 @@ $scrollBarHeight: 1px;
 }
 
 .publications{
-    margin-left: 230px;
     .publications-heading{
-        width: 80%;
+        margin-left: 230px;
+        width: 70%;
         h2{
             font-size: 32px;
             margin: 2px 0 5px 0;
             border-bottom: 1px solid white;
         }
     }
+    .publications-content{
+        margin-top: 70px;
+        .d-flex{
+            .blog{
+                margin: 70px;
+                img{
+                    width:500px;
+                    margin-bottom: 20px;
+                }
+                .blog-content{
+                    .blog-date{
+                        position: relative;
+                        z-index: 1;
+                        display: -webkit-box;
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        padding-top: .5rem;
+                        padding-bottom: .5rem;
+                        -webkit-box-pack: start;
+                        -webkit-justify-content: flex-start;
+                        -ms-flex-pack: start;
+                        justify-content: flex-start;
+                        -webkit-box-align: center;
+                        -webkit-align-items: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        color: #fff;
+                        font-size: .75rem;
+                        line-height: 1;
+                        font-weight: 500;
+                        .title{
+                            align-items: center;
+                            font-size: 1rem;
+                            text-transform: capitalize;
+                            font-weight: 300;
+                        }
+                    }
+                        h2{
+                            border-bottom: 1px solid white;
+                        } 
+                }
+            }
+        }
+        
+    }
 }
+
+/* Animation */
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+.xsmall1{
+    height: 1px;
+}
+.xsmall2{
+    height: 2px;
+}
+.xsmall3{
+    height: 3px;
+}
+.xsmall4{
+    height: 4px;
+}
+.small1{
+    height: 6px;
+}
+.small2{
+    height: 8px;
+}
+.small3{
+    height: 10px;
+}
+.small4{
+    height: 12px;
+}
+.big1{
+    height: 14px;
+}
+.big2{
+    height: 16px;
+}
+.big3{
+    height: 18px;
+}
+.big4{
+    height: 20px;
+}
+.before{
+    display: inline-block;
+    background-color: green;
+    width: 3px;
+    // height: 20px;
+    animation: wave 2s linear infinite;
+    position: relative;
+    bottom: 224px;
+    left: 33px;
+}
+    .after{
+        display: inline-block;
+        background-color: green;
+        width: 3px;
+        // height: 20px;
+        animation: wave 2s linear infinite;
+        position: relative;
+        bottom: 224px;
+        left: 224px;
+    }
+    .a1 {
+        animation-delay: 0s;
+      }
+      .a2 {
+        animation-delay: .2s;
+      }
+      .a3 {
+        animation-delay: .4s;
+      }
+      .a4 {
+        animation-delay: .6s;
+      }
+      .a5 {
+        animation-delay: .8s;
+      }
+      @keyframes wave {
+        0%, 50%{
+          transform: scaleY(1);
+        }
+        25% {
+          transform: scaleY(4);
+          background-color: white;
+        }
+      }
+
+      .circle {
+        background: #57D0E7;
+        border-radius: 50%;
+      }
+        .small{
+            width: 10px;
+            height: 10px;
+        }
+        .medium{
+            width: 15px;
+            height: 15px;
+        }
+        .large{
+            width: 20px;
+            height: 20px;
+        }
+        .ball1{
+            position: relative;
+            bottom: 140px;
+            left: 227px;
+            animation: MoveUpDown 1s linear infinite;
+        }
+        .ball2{
+            position: relative;
+            bottom: 140px;
+            left: 267px;
+            animation: MoveUpDown 1s linear infinite;
+        }
+        .ball3{
+            position: relative;
+            bottom: 170px;
+            left: 244px;
+            animation: MoveUpDown 1s linear infinite;
+        }
+        .ball4{
+            position: relative;
+            bottom: 160px;
+            left: 240px;
+            animation: MoveUpDown 1s linear infinite;
+        }
