@@ -428,25 +428,97 @@ $scrollBarHeight: 1px;
         }
         .ball1{
             position: relative;
-            bottom: 140px;
+            bottom: 257px;
             left: 227px;
-            animation: MoveUpDown 1s linear infinite;
+            animation: waveBubble1 3s infinite linear;
         }
         .ball2{
             position: relative;
-            bottom: 140px;
+            bottom: 271px;
             left: 267px;
-            animation: MoveUpDown 1s linear infinite;
+            animation: waveBubble2 3s infinite linear;
         }
         .ball3{
             position: relative;
-            bottom: 170px;
+            bottom: 288px;
             left: 244px;
-            animation: MoveUpDown 1s linear infinite;
+            animation: waveBubble3 3s infinite linear;
         }
         .ball4{
             position: relative;
-            bottom: 160px;
+            bottom: 281px;
             left: 240px;
-            animation: MoveUpDown 1s linear infinite;
+            animation: waveBubble4 3s infinite linear;
         }
+        @keyframes waveBubble1 {
+            25% { bottom: 280px; left: 245px;}
+            50% { bottom: 290px; left: 205px;}
+            75% { bottom: 305px; left: 215px;}
+            100% { bottom: 315px; left: 245px;}
+          }
+          @keyframes waveBubble2 {
+            25% { bottom: 290px; left: 255px;}
+            50% { bottom: 295px; left: 245px;}
+            75% { bottom: 305px; left: 255px;}
+            100% { bottom: 315px; left: 245px;}
+          }
+          @keyframes waveBubble3 {
+            25% { bottom: 290px; left: 227px;}
+            50% { bottom: 300px; left: 247px;}
+            75% { bottom: 320px; left: 220px;}
+            100% { bottom: 330px; left: 230px;}
+          }
+          @keyframes waveBubble4 {
+            25% { bottom: 300px; left: 245px;}
+            50% { bottom: 320px; left: 235px;}
+            75% { bottom: 330px; left: 255px;}
+            100% { bottom: 350px; left: 265px;}
+          }
+
+          .conveyorBox1{
+              background-image: url('../assets/conveyor-box1.png');
+              width: 40px;
+              height: 40px;
+              position: relative;
+              bottom: 94px;
+              left: 296px;
+              background-size: cover;
+              animation: conveyorMove1 3s infinite linear;
+          }
+          .conveyorBox2{
+            background-image: url('../assets/conveyor-box1.png');
+            width: 40px;
+            height: 40px;
+            position: relative;
+            // bottom: 112px;
+            // left: 327px;
+            bottom: 133px;
+            left: 296px;
+            background-size: cover;
+            animation: conveyorMove2 2s infinite linear;
+        }
+        .conveyorBox3{
+            background-image: url('../assets/conveyor-box1.png');
+            width: 40px;
+            height: 40px;
+            position: relative;
+            // bottom: 132px;
+            // left: 360px;
+            bottom: 174px;
+            left: 296px;
+            background-size: cover;
+            animation: conveyorMove3 1s infinite linear;
+        }
+        @keyframes conveyorMove1 {
+            //50% { bottom: 71px; left: 327px; opacity: 0.5;}
+            100% { bottom: 58px; left: 354px; opacity: 0;}
+          }
+          @keyframes conveyorMove2 {
+            100% { bottom: 98px; left: 354px; opacity: 0;}
+            //75% { bottom: 134px; left: 296px; opacity: 1;}
+            //100% { bottom: 112px; left: 327px; opacity: 0;}
+          }
+          @keyframes conveyorMove3 {
+            //100% { bottom: 174px; left: 297px; opacity: 1;}
+            100% { bottom: 138px; left: 354px; opacity: 0;}
+          }
