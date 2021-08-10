@@ -10,6 +10,7 @@
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="/node_modules/css-tooltip/dist/css-tooltip.min.css" />
     <script src="js/index.js"></script>
     <title>Dhankuwar Sisodiya</title>
 </head>
@@ -22,13 +23,16 @@
                 <a href="">
                     <div class="text">Home</div>
                 </a>
-                <a href="">
-                    <div class="text">Experience</div>
+                <a href="#experience">
+                    <div class="text" >Experience</div>
                 </a>
-                <a href="">
-                    <div class="text">Blogs</div>
+                <a href="#projects">
+                    <div class="text" >Projects</div>
                 </a>
-                <a href="">
+                <a href="#blogs">
+                    <div class="text" >Blogs</div>
+                </a>
+                <a href="#contacts">
                     <div class="text">Contact</div>
                 </a>
             </div>
@@ -46,14 +50,26 @@
                     efficient and innovative solutions.
                 </h3>
                 <ul>
-                    <li>An experienced full stack software engineer with an inclination towards front end development
+                    <li>Technology-driven enthusiast with experience in all phases of software development lifecycle - from requirements analysis to design, implementation and testing
                     </li>
-                    <li>Author at Medium and tech youtuber</li>
+                    <li>Creative-driven developer with diverse creative background, mainly focused on web development</li>
                 </ul>
+                <h3 class="education">
+                    <h2 class="">Education</h2>
+                    Northeastern University - Master - Information Systems
+                    <ul>
+                        <li>GPA: 3.76/4.00</li>
+                        <li>Relevant Courses: Cloud Computing, Web Development, Data Structure & Algorithm, QA</li>
+                    </ul>
+                    Maharastra Institute of Technology, Pune - Bachelor - Computer Science
+                    <ul>
+                        <li>Relevant Course: Data Structure and Algorithm, Linear Algebra, Probability and Statistics, Advanced Calculus</li>
+                    </ul>
+                </h3>
             </div>
         </div>
     </div>
-    <div class="horizontal-scroll-wrapper squares">
+    <section class="horizontal-scroll-wrapper squares" id="experience">
         <div class="wrapper">
             <div>
                 <div class="img">
@@ -145,8 +161,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="projects">
+    </section>
+    <section class="projects" id="projects">
         <div class="d-flex project-wrapper">
             <div class="project-content animated animatedFadeInUp fadeInUp">
                 <h2 class="animate__animated animate__bounce">Individual Experiences</h2>
@@ -245,17 +261,15 @@
             </div>
         </div>
         <div class="d-flex project-wrapper">
-            <div class="project-content">
+            <div class="project-content animated animatedFadeInUp fadeInUp">
                 <h2>Spreadsheet application</h2>
                 <div>
                     <ul>
-                        <ul>
-                            <li>Implemented spreadsheet application using Javascript, RxJS, and SCSS</li>
-                            <li>Functionalties like sum of multiple rows/colums or arithmentic operation on multiple
+                        <li>Implemented spreadsheet application using Javascript, RxJS, and SCSS</li>
+                        <li>Functionalties like sum of multiple rows/colums or arithmentic operation on multiple
                                 cells using BODMAS rule</li>
-                            <li>Exporting/Importing CSV file to load data into sheet</li>
-                            <li>Tech Stack: HTML5, Javascript, RxJS, SCSS</li>
-                        </ul>
+                        <li>Exporting/Importing CSV file to load data into sheet</li>
+                        <li>Tech Stack: HTML5, Javascript, RxJS, SCSS</li>
                     </ul>
                     <a href="https://github.com/DhankuwarSisodiya/Spreadsheet" target="_blank"><i
                             class="fab fa-github m-10 fa-2x"></i>Code Base</a>
@@ -268,20 +282,25 @@
         </div>
         <div class="d-flex project-wrapper">
             <div class="project-image">
-                <div style="background-image:url(&quot;assets/airpodsProject.png&quot;)" class="project-image">
+                <div style="background-image:url(&quot;assets/GraphQL_Logo.svg.png&quot;)" class="rotate">
                 </div>
             </div>
             <div class="project-content">
-                <h2>Airpods Pro landing page scroll animation</h2>
+                <h2>GraphQL Debut</h2>
                 <div>
+                    An introductory project into graphQL
                     <ul>
-                        <li>Implemented a version of Airpods pro landing page scroll animation using JavaScript</li>
-                        <li>Tech Stack: HTML5, CSS, JavaScript</li>
+                        <li>Implemented Queries & Mutations</li>
+                        <li>Designed Routing policies to map https requests to ELB and IAM Roles to restrict access to
+                            resources like S3.</li>
+                        <li>Tech Stack - Node.js, Express.js, Sequelize, REST APIs, MySQL</li>
                     </ul>
+                    <a href="https://github.com/DhankuwarSisodiya/graphQL_test" target="_blank"><i
+                            class="fab fa-github m-10 fa-2x"></i>Code Base</a>
                 </div>
             </div>
         </div>
-        <div class="publications">
+        <div class="publications" id="blogs">
             <div class="publications-heading">
                 <div class="d-flex sub-heading">
                     <div class="title">Blogs</div>
@@ -341,7 +360,17 @@
                 </div>
             </div>
         </div>
-    </div>
+        <div class="contact" id="contacts">
+            <div class="d-flex align-items-center justify-content-center">
+                <h1>Come, say Hi!</h1>
+            </div>
+            <ul class="d-flex align-items-center justify-content-center">
+                <li><a data-tooltip="dhankuwarsisodiya@gmail.com"><i class="fas fa-envelope m-10 fa-2x"></i></a></li>
+                <li><a target="_blank" href="https://www.linkedin.com/in/dhankuwar-sisodiya-79960714a/"><i class="fab fa-linkedin m-10 fa-2x"></i></a> </li>
+                <li><a target="_blank" href="https://github.com/DhankuwarSisodiya"><i class="fab fa-github m-10 fa-2x"></i></a></li>
+            </ul>
+        </div>
+    </section>
 
 </body>
 

@@ -23,6 +23,10 @@ h1 {
     justify-content: flex-end;
 }
 
+.justify-content-center {
+    justify-content: center;
+}
+
 .align-items-center{
     align-items: center;
 }
@@ -170,7 +174,7 @@ $scrollBarHeight: 1px;
 
 .projects{
     padding: 175px 75px;
-    height: 600vh;
+    height: 550vh;
     // border:1px solid red;
     background: #000000;
     position: absolute;
@@ -521,4 +525,31 @@ $scrollBarHeight: 1px;
           @keyframes conveyorMove3 {
             //100% { bottom: 174px; left: 297px; opacity: 1;}
             100% { bottom: 138px; left: 354px; opacity: 0;}
+          }
+
+          .contact {
+              ul {
+                  padding-left: 0;
+                  li {
+                      list-style-type: none;
+                      cursor: pointer;
+                  }
+              }
+          }
+
+
+          .rotate {
+            width: 320px;
+            height: 335px;
+            background-size: cover;
+            border-radius: 25px;
+            animation: rotation 5s infinite linear;
+          }
+          @keyframes rotation {
+            from {
+              transform: rotate(0deg);
+            }
+            to {
+              transform: rotate(359deg);
+            }
           }
