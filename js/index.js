@@ -38,7 +38,6 @@ function MouseWheelHandler(e) {
     }
 
     if(window.pageYOffset < window.innerHeight+50){
-        projects.style.display = "none";
         experience.scrollLeft = 1
     }
 }
